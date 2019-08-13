@@ -1,0 +1,22 @@
+
+body {
+  background-color: #ecfcff;
+  font-family: 'Source Code Pro', monospace;
+}
+
+.jumbotron {
+  background-color: #5bd1d7;
+  text-align: center;
+  color: #fff;
+}
+
+.header {
+  font-size: 70px;
+}
+
+.instruction-header {
+  width: 100%;
+  background-color: #5bd1d7;
+  color: #fff;
+  text-align: center;
+}
