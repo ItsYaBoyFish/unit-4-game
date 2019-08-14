@@ -23,6 +23,29 @@ body {
   text-align: center;
 }
 
+.guessThisNumber {
+  font-size: 40px;
+  margin-top: 0;
+}
+
+.winsLosses-container {
+  font-size: 30px;
+  padding-top: .6em;
+}
+
+.img {
+  height: 200px !important;
+  width: 200px !important;
+}
+
+
+
+
+
+
+
+
+
 
 
 
