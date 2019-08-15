@@ -38,6 +38,10 @@ body {
   padding-top: .6em;
 }
 
+.yourScore {
+  font-size: 28px;
+}
+
 .img {
   display: flex;
 }
