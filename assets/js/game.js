@@ -14,6 +14,7 @@ const yourScore = $('#yourScore');
 
 
 
+
 clickedImages.on('click', function() {
   console.log($(this).attr('value'));
 })
