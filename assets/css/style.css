@@ -22,10 +22,15 @@ body {
   color: #fff;
   text-align: center;
 }
+.scoreGuess {
+  padding-top: .5em;
+}
+.score-header {
+  padding-top: 0;
+}
 
 .guessThisNumber {
   font-size: 40px;
-  margin-top: 0;
 }
 
 .winsLosses-container {
@@ -34,12 +39,17 @@ body {
 }
 
 .img {
-  height: 200px !important;
-  width: 200px !important;
+  display: flex;
 }
 
-
-
+.crystal-img {
+  height: 75px !important;
+  width: 75px !important;
+  margin-top: .6em;
+  margin-left: .5em;
+  margin-right: .5em;
+  border-radius: 15px;
+}
 
 
 
