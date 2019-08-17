@@ -8,13 +8,13 @@ const yourScore = $('#yourScore');
 var wins = 0;
 var losses = 0;
 var holder = 0;
+
 // End of DOM Manipulation Variables. 
 
 // When The Window Loads, I want to initialize the game. 
-window.onload = startGame(); 
-
+  startGame();
+  const imagesDiv = $('#images-div');
   for (var i = 0; i < images.length; i++) {
-    const imagesDiv = $('#images-div');
     var loadedImage = $('<img>');
     var randomNumber = Math.floor(Math.random() * 10);
     loadedImage.attr("src", `assets/images/${images[i]}`);
@@ -50,7 +50,7 @@ $('.crystal-img').on('click', function() {
     console.log('You Lose');
     losses++;
     totalLosses.text(losses)
-    setTimeout(resetGame, 2000);
+    // setTimeout(resetGame, 2000);
   }
 });
 
@@ -70,5 +70,18 @@ function resetGame() {
   numberYouAreAttemptingToGuess.val(guessableNumber);
   numberYouAreAttemptingToGuess.text(guessableNumber);
   holder = 0;
+  // Trying to reset the value of the images.
+  imagesDiv.empty();
+  setTimeout(resetImages, 2000);
 }
 
+function resetImages() {
+  const imagesDiv = $('#images-div');
+  for (var i = 0; i < images.length; i++) {
+    var loadedImage = $('<img>');
+    var randomNumber = Math.floor(Math.random() * 10);
+    loadedImage.attr("src", `assets/images/${images[i]}`);
+    loadedImage.attr("class","crystal-img");
+    loadedImage.attr("data-number", `${randomNumber}`);
+    imagesDiv.append(loadedImage);
+}};
