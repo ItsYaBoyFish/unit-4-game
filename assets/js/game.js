@@ -65,8 +65,8 @@ function startGame() {
 };
 
 function resetGame() {
-  var guessableNumber = Math.floor(Math.random() * 10);
   yourScore.text('0');
+  var guessableNumber = Math.floor(Math.random() * 10);
   numberYouAreAttemptingToGuess.val(guessableNumber);
   numberYouAreAttemptingToGuess.text(guessableNumber);
   holder = 0;
