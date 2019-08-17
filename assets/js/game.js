@@ -50,7 +50,7 @@ $('.crystal-img').on('click', function() {
     console.log('You Lose');
     losses++;
     totalLosses.text(losses)
-    // setTimeout(resetGame, 2000);
+    setTimeout(resetGame, 2000);
   }
 });
 
