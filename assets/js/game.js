@@ -41,7 +41,7 @@ $('.crystal-img').on('click', function() {
     }, 2000);
     wins++;
     totalWins.text(wins);
-    setTimeout(resetGame, 2000);
+    setTimeout(resetGame, 1000);
   } else if (holder > parsedNumberYouAreAttemptingToGuess) {
     $('#messages').append('<h3 id="new-message">You Lose!</h3>');
     setTimeout(function () {
@@ -50,7 +50,7 @@ $('.crystal-img').on('click', function() {
     console.log('You Lose');
     losses++;
     totalLosses.text(losses)
-    setTimeout(resetGame, 2000);
+    setTimeout(resetGame, 1000);
   }
 });
 
