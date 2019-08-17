@@ -71,8 +71,8 @@ function resetGame() {
   numberYouAreAttemptingToGuess.text(guessableNumber);
   holder = 0;
   // Trying to reset the value of the images.
-  imagesDiv.empty();
-  setTimeout(resetImages, 2000);
+  // imagesDiv.empty();
+  // setTimeout(resetImages, 2000);
 }
 
 function resetImages() {
